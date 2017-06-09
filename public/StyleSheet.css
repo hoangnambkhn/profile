@@ -1,0 +1,41 @@
+
+body {
+  margin-top: 60px;
+}
+h1 {
+  font-size : 60px;
+}
+
+h3 {
+  font-size : 25px;
+  margin-left:180px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+ul{
+  font-size: 14.5px;
+  margin-left:190px;
+  margin-right:190px;
+}
+h4{
+  font-size: 18px;
+  margin-top:20px;
+  margin-left:190px;
+  margin-right:190px;
+
+}
+h5{
+ font-size: 15px;
+ margin-left:190px;
+ margin-right:190px;
+}
+p{
+  font-size: 25px;
+  margin-top:40px;
+  margin-left:160px;
+  margin-right:160px;
+}
+.quote {
+  margin-left:190px;
+  margin-right:190px;
+}
