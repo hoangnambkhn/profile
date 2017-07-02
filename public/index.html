@@ -1,182 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
 
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Template</title>
-
-    <meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  	<link href="css/full-slider.css" rel="stylesheet">
-
- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  	<script>
-    function init() {
-        window.addEventListener('scroll', function(e){
-            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                shrinkOn = 300,
-                header = document.querySelector("header");
-            if (distanceY > shrinkOn) {
-                classie.add(header,"smaller");
-            } else {
-                if (classie.has(header,"smaller")) {
-                    classie.remove(header,"smaller");
-                }
-            }
-        });
-    }
-    window.onload = init();
-</script>
-   
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Namhoang Page by TEMPLATED</title>
+<link href="StyleSheet.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
-
-<header>
-    <div class="container clearfix">
-        <h1 id="logo">
-            Namhoang
-        </h1>
-        <nav>
-            <a href="/home">Trang chủ</a>
-            <a href="/contact">Liên hệ</a>
-            <a href="/about">Giới thiệu</a>
-            <a href="/other">Linh tinh ^^ </a>
-        </nav>
-    </div>
-</header>
-
 <body>
-
-    <!-- Navigation -->
-    <div class = "container">
-    <!-- Full Page Image Background Carousel Header -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
-                <img src="data/pic03.JPG" alt="Los Angeles" style="width:100%;">
-                <div class="carousel-caption">
-                    <h2>Kỷ yếu với đồ đệ</h2>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
-                <img src="data/pic04.JPG" alt="Los Angeles" style="width:100%;">
-                <div class="carousel-caption">
-                    <h2>Đôi khi tự sướng tý</h2>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <img src="data/pic05.jpg" alt="Los Angeles" style="width:100%;">
-                <div class="carousel-caption">
-                    <h2>Champ thích nhất trong LoL</h2>
-                </div>
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-
-    </div>
-    <div id="content">
-        <section>
-            <div class="container">
-                <h1>Header Resize On Scroll with Animations</h1>
-                <p>Cupcake ipsum dolor sit amet lollipop. Macaroon candy cotton candy bear claw macaroon carrot cake pastry icing dessert. Cupcake pastry tart sesame snaps lollipop donut pie. Cookie apple pie toffee lemon drops jelly beans cheesecake sweet roll. Jelly-o soufflé donut candy canes wafer dragée sweet cheesecake. Macaroon caramels pie cookie gummi bears. Ice cream jelly-o toffee cookie gingerbread cookie. Soufflé fruitcake jelly-o jelly chupa chups jelly beans. Dragée marzipan pastry macaroon oat cake muffin soufflé topping liquorice. Jelly-o chocolate cake lollipop.</p>
-                <p>Sugar plum muffin cookie pastry oat cake icing candy canes chocolate. Gummi bears chupa chups fruitcake dessert jelly. Muffin cookie ice cream soufflé pastry lollipop gingerbread sweet. Unerdwear.com bonbon candy marzipan bonbon gummies chocolate cake gummi bears powder. Unerdwear.com tart halvah chocolate cake dragée liquorice. Sugar plum chocolate bar pastry liquorice dragée jelly powder. Jelly tootsie roll applicake caramels. Marzipan candy tootsie roll donut. Gummies ice cream macaroon applicake.</p>
-                <p>
-                    <a href="https://www.facebook.com/pratik.chauhan.cp">« Connect With Me | Chauhan PRatik</a><br>
-                    <a href="http://bootsnipp.com/cppratikcp">« Go back to all tutorials?</a>
-                </p>
-            </div>
-        </section>
-        <section class="color">
-            <div class="container">
-                <h1>Cupcakes for the people!</h1>
-                <p>Cupcake ipsum dolor sit amet lollipop. Macaroon candy cotton candy bear claw macaroon carrot cake pastry icing dessert. Cupcake pastry tart sesame snaps lollipop donut pie. Cookie apple pie toffee lemon drops jelly beans cheesecake sweet roll. Jelly-o soufflé donut candy canes wafer dragée sweet cheesecake. Macaroon caramels pie cookie gummi bears. Ice cream jelly-o toffee cookie gingerbread cookie. Soufflé fruitcake jelly-o jelly chupa chups jelly beans. Dragée marzipan pastry macaroon oat cake muffin soufflé topping liquorice. Jelly-o chocolate cake lollipop.</p>
-                <p>Sugar plum muffin cookie pastry oat cake icing candy canes chocolate. Gummi bears chupa chups fruitcake dessert jelly. Muffin cookie ice cream soufflé pastry lollipop gingerbread sweet. Unerdwear.com bonbon candy marzipan bonbon gummies chocolate cake gummi bears powder. Unerdwear.com tart halvah chocolate cake dragée liquorice. Sugar plum chocolate bar pastry liquorice dragée jelly powder. Jelly tootsie roll applicake caramels. Marzipan candy tootsie roll donut. Gummies ice cream macaroon applicake.</p>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h1>Chocolate, vanilla, and red velvet</h1>
-                <p>Cupcake ipsum dolor sit amet lollipop. Macaroon candy cotton candy bear claw macaroon carrot cake pastry icing dessert. Cupcake pastry tart sesame snaps lollipop donut pie. Cookie apple pie toffee lemon drops jelly beans cheesecake sweet roll. Jelly-o soufflé donut candy canes wafer dragée sweet cheesecake. Macaroon caramels pie cookie gummi bears. Ice cream jelly-o toffee cookie gingerbread cookie. Soufflé fruitcake jelly-o jelly chupa chups jelly beans. Dragée marzipan pastry macaroon oat cake muffin soufflé topping liquorice. Jelly-o chocolate cake lollipop.</p>
-                <p>Sugar plum muffin cookie pastry oat cake icing candy canes chocolate. Gummi bears chupa chups fruitcake dessert jelly. Muffin cookie ice cream soufflé pastry lollipop gingerbread sweet. Unerdwear.com bonbon candy marzipan bonbon gummies chocolate cake gummi bears powder. Unerdwear.com tart halvah chocolate cake dragée liquorice. Sugar plum chocolate bar pastry liquorice dragée jelly powder. Jelly tootsie roll applicake caramels. Marzipan candy tootsie roll donut. Gummies ice cream macaroon applicake.</p>
-            </div>
-        </section>
-        <section class="color">
-            <div class="container">
-                <h1>Come to me!</h1>
-                <p>Cupcake ipsum dolor sit amet lollipop. Macaroon candy cotton candy bear claw macaroon carrot cake pastry icing dessert. Cupcake pastry tart sesame snaps lollipop donut pie. Cookie apple pie toffee lemon drops jelly beans cheesecake sweet roll. Jelly-o soufflé donut candy canes wafer dragée sweet cheesecake. Macaroon caramels pie cookie gummi bears. Ice cream jelly-o toffee cookie gingerbread cookie. Soufflé fruitcake jelly-o jelly chupa chups jelly beans. Dragée marzipan pastry macaroon oat cake muffin soufflé topping liquorice. Jelly-o chocolate cake lollipop.</p>
-                <p>Sugar plum muffin cookie pastry oat cake icing candy canes chocolate. Gummi bears chupa chups fruitcake dessert jelly. Muffin cookie ice cream soufflé pastry lollipop gingerbread sweet. Unerdwear.com bonbon candy marzipan bonbon gummies chocolate cake gummi bears powder. Unerdwear.com tart halvah chocolate cake dragée liquorice. Sugar plum chocolate bar pastry liquorice dragée jelly powder. Jelly tootsie roll applicake caramels. Marzipan candy tootsie roll donut. Gummies ice cream macaroon applicake.</p>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h1>Sugar rush, oh my...</h1>
-                <p>Cupcake ipsum dolor sit amet lollipop. Macaroon candy cotton candy bear claw macaroon carrot cake pastry icing dessert. Cupcake pastry tart sesame snaps lollipop donut pie. Cookie apple pie toffee lemon drops jelly beans cheesecake sweet roll. Jelly-o soufflé donut candy canes wafer dragée sweet cheesecake. Macaroon caramels pie cookie gummi bears. Ice cream jelly-o toffee cookie gingerbread cookie. Soufflé fruitcake jelly-o jelly chupa chups jelly beans. Dragée marzipan pastry macaroon oat cake muffin soufflé topping liquorice. Jelly-o chocolate cake lollipop.</p>
-                <p>Sugar plum muffin cookie pastry oat cake icing candy canes chocolate. Gummi bears chupa chups fruitcake dessert jelly. Muffin cookie ice cream soufflé pastry lollipop gingerbread sweet. Unerdwear.com bonbon candy marzipan bonbon gummies chocolate cake gummi bears powder. Unerdwear.com tart halvah chocolate cake dragée liquorice. Sugar plum chocolate bar pastry liquorice dragée jelly powder. Jelly tootsie roll applicake caramels. Marzipan candy tootsie roll donut. Gummies ice cream macaroon applicake.</p>
-            </div>
-        </section>
-    </div>
-    </div>
-
-    
-
-    <!-- Page Content -->
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-12">
-                <h1>Trang liên hệ chi tiết</h1>
-                <p>Bạn có thể liên hệ qua tin nhắn trang <a href="facebook.com/nam.hoang.185">Facebook.</a>Tks for watching ^^ </p>
-            </div>
-        </div>
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-			<div id="info-bar">
-    		<div class="container clearfix">
-        		<span class="all-tutorials"><a href="http://bootsnipp.com/cppratikcp">←Back to Home</a></span>
-        		<span class="back-to-tutorial"><a href="https://www.facebook.com/pratik.chauhan.cp">Nam P Hoang</a></span>
-    		</div>
-			</div><!-- /#top-bar -->
-		</footer>
-
-    </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
-
-    
-
+<div id="wrapper">
+	<div id="wrapper-bgbtm">
+		<div id="header">
+			<div id="logo">
+				<h1><a href="#">Nam Hoang Page ^^ </a></h1>
+				<p>Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a></p>
+			</div>
+		</div>
+		<!-- end #header -->
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="/home">Homepage</a></li>
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/photo">Photos</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/link">Links</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+		</div>
+		<!-- end #menu -->
+		<div id="page">
+			<div id="page-bgtop">
+				<div id="page-bgbtm">
+					<div id="content">
+						<div class="post">
+							<h2 class="title"><a href="/welcome-page">Welcome to Nam Hoang Page </a></h2>
+							<p class="meta">Posted by <a href="#">Namhoang</a> on July 02, 2017
+								&nbsp;&bull;&nbsp; <a href="#" class="comments">Comments (0)</a> &nbsp;&bull;&nbsp; <a href="#" class="permalink">Full article</a></p>
+							<div class="entry">
+								<p><img src="images/pic01.JPG" width="200" height="143" alt="" class="alignleft border" />Chào mừng tới với <strong>Nam Hoang Page </strong>, một trang web miễn phí, được xây dựng dựa trên trang mã nguồn mở của <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. Template miễn phí này được released tại <a href="http://templated.co/license">Creative Commons Attribution</a>.Vì vậy bạn có thể tự do làm bất cứ điều gì bạn muốn với template này (thậm chí sử dụng nó trên thị trường) miễn là bạn cung cấp cho chúng tôi tín dụng cho nó. Chúc vui vẻ :)</p>
+								<p>Page này đang trong quá trình xây dựng và thử nghiệm chỉ dựa trên việc tự tìm hiểu các công nghệ <strong>html,css,nodejs và một vài công nghệ khác </strong>bằng Google. Đừng chê bai nếu bạn thấy vẫn còn quá nhiều lỗi hoặc chức năng không hoạt động. TKS all ^^ </p>
+							</div>
+						</div>
+						<div class="post">
+							<h2 class="title"><a href="#">Truyện hay: Arifureta Shokugyou de Sekai Saikyou</a></h2>
+							<p class="meta">Posted by <a href="#">Namhoang</a> on July 3, 2017
+								&nbsp;&bull;&nbsp; <a href="#" class="comments">Comments (0)</a> &nbsp;&bull;&nbsp; <a href="#" class="permalink">Full article</a></p>
+							<div class="entry">
+								<p><img src="images/arifureta-picture.png" width="143" height="200" alt="" class="alignleft border" />Một nhân vật được xem là vô dụng như Nagumo Hajime sẽ không thể ngờ rằng có một ngày cùng cả lớp được triệu hồi sang một thế giới khác, mang trong mình "Thiên chức" nhất định nhằm giải cứu Loài người thoát khỏi họa diệt vong. Điều gì đang chờ đợi cậu ở thế giới mới ấy? Liệu Hajime có thể lột xác trở thành con người mới được không?</p>
+								<p><a href = "/newest-chap">Chương 130</a> <a href = "/older-chap">Chương 129</a></p>
+								<p>Nguồn: <a href = "http://sonako.wikia.com/wiki/Arifureta_Shokugyou_de_Sekai_Saikyou">Sonako Light Novel</a> và <a href = "http://ln.hako.re/truyen/767-arifureta-shokugyou-de-sekai-saikyou">ln.hako.re</a></p>
+							</div>
+						</div>
+						<div class="post">
+							<h2 class="title"><a href="#">Consectetuer hendrerit urnaelit</a></h2>
+							<p class="meta">Posted by <a href="#">Someone</a> on July 8, 2011
+								&nbsp;&bull;&nbsp; <a href="#" class="comments">Comments (64)</a> &nbsp;&bull;&nbsp; <a href="#" class="permalink">Full article</a></p>
+							<div class="entry">
+								<p><img src="images/img04.jpg" width="143" height="143" alt="" class="alignleft border" />Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum vel, tempor at, varius non, purus. Mauris vitae nisl nec metus placerat consectetuer. Donec ipsum. Proin imperdiet est. Pellentesque ornare, orci in consectetuer hendrerit, urna elit eleifend nunc. Proin imperdiet est. Pellentesque ornare eleifend nunc. Donec ipsum. Proin imperdiet est. Pellentesque ornare, orci in consectetuer hendrerit, urna elit eleifend nunc. </p>
+							</div>
+						</div>
+						<div class="post">
+							<h2 class="title"><a href="#">Phasellus pellentesque turpis </a></h2>
+							<p class="meta">Posted by <a href="#">Someone</a> on July 8, 2011
+								&nbsp;&bull;&nbsp; <a href="#" class="comments">Comments (64)</a> &nbsp;&bull;&nbsp; <a href="#" class="permalink">Full article</a></p>
+							<div class="entry">
+								<p><img src="images/img02.jpg" width="143" height="143" alt="" class="alignleft border" />Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum vel, tempor at, varius non, purus. Mauris vitae nisl nec metus placerat consectetuer. Donec ipsum. Proin imperdiet est. Pellentesque ornare, orci in consectetuer hendrerit, urna elit eleifend nunc. Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum vel, tempor at, varius non, purus. Mauris vitae nisl nec metus placerat consectetuer. </p>
+							</div>
+						</div>
+					</div>
+					<!-- end #content -->
+					<div id="sidebar">
+						<div id="search">
+							<h2>Search</h2>
+							<form method="get" action="">
+								<fieldset>
+									<input type="text" name="s" id="search-text" size="15" value="enter keywords here..." />
+									<input type="submit" id="search-submit" value="GO" />
+								</fieldset>
+							</form>
+						</div>
+						<ul>
+							<li>
+								<h2>Aliquam tempus</h2>
+								<p>Mauris vitae nisl nec metus placerat perdiet est. Phasellus dapibus semper consectetuer hendrerit.</p>
+							</li>
+							<li>
+								<h2>Categories</h2>
+								<ul>
+									<li><a href="#">Aliquam libero</a></li>
+									<li><a href="#">Consectetuer adipiscing elit</a></li>
+									<li><a href="#">Metus aliquam pellentesque</a></li>
+									<li><a href="#">Suspendisse iaculis mauris</a></li>
+									<li><a href="#">Urnanet non molestie semper</a></li>
+									<li><a href="#">Proin gravida orci porttitor</a></li>
+								</ul>
+							</li>
+							<li>
+								<h2>Blogroll</h2>
+								<ul>
+									<li><a href="#">Aliquam libero</a></li>
+									<li><a href="#">Consectetuer adipiscing elit</a></li>
+									<li><a href="#">Metus aliquam pellentesque</a></li>
+									<li><a href="#">Suspendisse iaculis mauris</a></li>
+									<li><a href="#">Urnanet non molestie semper</a></li>
+									<li><a href="#">Proin gravida orci porttitor</a></li>
+								</ul>
+							</li>
+							<li>
+								<h2>Archives</h2>
+								<ul>
+									<li><a href="#">Aliquam libero</a></li>
+									<li><a href="#">Consectetuer adipiscing elit</a></li>
+									<li><a href="#">Metus aliquam pellentesque</a></li>
+									<li><a href="#">Suspendisse iaculis mauris</a></li>
+									<li><a href="#">Urnanet non molestie semper</a></li>
+									<li><a href="#">Proin gravida orci porttitor</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- end #sidebar -->
+					<div style="clear: both;">&nbsp;</div>
+				</div>
+			</div>
+		</div>
+		<!-- end #page -->
+		<div id="footer">
+			<p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+		</div>
+		<!-- end #footer -->
+	</div>
+</div>
 </body>
-
 </html>
