@@ -21,6 +21,10 @@ app.get('/home',function(req, res) {
 app.get('/welcome-page',function(req,res){
     res.send("hello guy");
 })
+app.get('/arifureta',function(req, res) {
+    res.render('arifureta');
+})
+
 app.get('/link',function(req,res){
     res.render('link');
 })
