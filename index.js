@@ -3,15 +3,47 @@ var bodyParser = require("body-parser");
 var app = express();
 var port = process.env.PORT || 8080;
 
+var MongoClient = require("mongodb").MongoClient;
+var mongoose = require("mongoose");
+var client = require("./models/client");
+
+
+
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/myDatabase');
+mongoose.Promise = global.Promise;
+
+app.use(bodyParser.urlencoded({ extended: true })); 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
-app.use(express.static(__dirname+"/public"));
-app.use(bodyParser.urlencoded({ extended: true })); 
+app.use(express.static(__dirname + '/public'));
 app.get('/',function(req,res){
     // gửi trả kết quả khi request là http://127.0.0.1:port/home
-    express.static(__dirname+"/public")
-			//res.end("Hello World!");
-			});
+    var data = new client({
+        ip : req.header('x-forwarded-for') || req.connection.remoteAddress,
+        language : req.headers['accept-language'].split(',')[0],
+        systemdata : req.headers["user-agent"].match(/\((.*?)\)/)[1]
+    })
+    data.save(function(err){
+        if(err) console.err(err);
+        console.log("client save");
+    })
+    // var data = {}
+    // data.ip = req.header('x-forwarded-for') || req.connection.remoteAddress;
+    // data.language = req.headers['accept-language'].split(',')[0];
+    // data.system = req.headers["user-agent"].match(/\((.*?)\)/)[1];
+    // console.log(data.system);
+    res.render('home');
+    
+});
+
+app.get('/getrequestdata',function(req, res) {
+    client.find({},function(err,data){
+        if(err) console.error(err);
+        console.log(data);
+        res.json({"client" : data});
+        
+    })
+})
 			
 app.get('/home',function(req, res) {
     res.redirect('/');
@@ -19,6 +51,7 @@ app.get('/home',function(req, res) {
 })
 			
 app.get('/welcome-page',function(req,res){
+    console.log("test")
     res.send("hello guy");
 })
 app.get('/arifureta',function(req, res) {
@@ -43,4 +76,4 @@ app.get('/contact',function(req, res) {
 app.listen(port,function(err){
     if(err) console.error(err);
     console.log("server starting");
-});
+})
