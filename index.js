@@ -73,6 +73,12 @@ app.get('/photo',function(req, res) {
 app.get('/contact',function(req, res) {
     res.render('contact');
 })
+app.get('/confes',function(req, res) {
+    res.render('confes');
+})
+app.get('/confes/sendmessage',function(req, res) {
+    res.send("tks for question")
+})
 app.listen(port,function(err){
     if(err) console.error(err);
     console.log("server starting");

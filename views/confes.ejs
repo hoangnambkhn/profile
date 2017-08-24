@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Confession ^^</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">  
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">  
+	<link href="../confes.css"  type="text/css" rel="stylesheet">
+	<script src="../JavaScript.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+  <div class = "header">
+     <div class = "navbar navbar-inverse navbar-fixed-top app-navbar">
+       <div class = "container" >
+         <a href = '/confes'>
+           <button type="button" class="btn btn-primary-outline">Nam Hoang Confession</button>
+           </a>
+         <a href = "about">
+           <button class = " right btn btn-primary-outline" id = "btn-about"> About Me </button>    
+         </a>
+         <a href="/contact">
+           <button class=" right btn btn-primary-outline" id="btn-signin"> Contact Me </button>
+         </a>
+         <a href = "/home">
+           <button class=" right btn btn-primary-outline" id="btn-home"> Home </button>
+         </a> 
+       </div>
+         
+       </div>
+    </div>
+  </div>
+ 
+  <div class = "main-page">
+    
+    <div class = "messenger-container">
+      <div class = "img-div">
+      <img data-action="zoom" class="panel-profile-img" src="https://sarahahstorage.blob.core.windows.net/files/736776ad47d-5eb6-4e4e-af00-48d30b8be8c3.jpg">
+    </div>
+  <div class = "title">Give me some questions ^^</div>
+  <form action = '/confes/sendmessage'>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Name of You (You can hidden ^^)</label>
+    <input type="text" class="form-control" id="name" name =  "name" placeholder="Tạ Thị Lạng ^^">
+  </div>
+  <div class="form-group">
+    <label for="exampleTextarea">Leave a constructive message ^^</label>
+    <textarea class="form-control" id="message" name = "message" rows="5"></textarea>
+  </div>
+    <button type="submit" class="btn btn-primary">Send</button>
+    <button type="reset" class = "btn btn-danger">Reset</button>
+</form>
+  </div>
+    
+  </div>
+</body>
