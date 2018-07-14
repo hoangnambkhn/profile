@@ -119,10 +119,17 @@
                                           console.log(data);
                                       for(var i = 0; i < data.question.length; i++){
                                             var html = '';
-                                            html += '<a href="/question?id=' + data.question[i]._id +'"';
-                                              html += 'class = "list-group-item"'+ '>';
-                                            html += data.question[i].message;
-                                            html += '</a>';
+                                            html += '<div class = "list list-group-item">';
+                                            html += '<div class = "row">';
+                                            html += '<div class = "col-md-8  grab">';
+                                            html += '<a class = "question" href = "/question?id='+ data.question[i]._id +'">';
+                                            html += '<div>' + data.question[i].message + '</div>';
+                                            html += '<div>' + "anonymous" + '</div>';
+                                            html += '</a>' + '</div>';
+                                            html += '<div class = "col-md-4 remove_icon">';
+                                            html += ' <a href="/remove?id='+ data.question[i]._id +'">Remove</a>';
+                                            html += '<a href="#">Share</a>';
+                                            html += '</div>' + '</div>' + '</div>';
                                             $('#list-poll').append(html);
                                           }
                                       });

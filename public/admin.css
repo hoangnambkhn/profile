@@ -360,3 +360,9 @@ p {
 .chart-div {
   background :#EEEEEE;
 }
+.grab {cursor: -webkit-grab; cursor: grab;}
+.remove_icon {
+  margin: auto;
+    width: 50%;
+    float: right;
+}
