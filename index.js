@@ -180,11 +180,19 @@ app.get('/profile',function(req, res ,next){
           return next(err);
         } else {
           return  res.render('admin', {user : user});
-          
         }
       }
     });
     
+})
+app.get('/remove',function(req,res){
+    var questionID = req.url;
+    console.log("url:"+questionID);
+    var id = questionID.split('=')[1];
+    messageDb.find({_id:id}).remove().exec();
+    res.redirect('profile');
+
+
 })
 app.get('/getMyQuestion',function(req,res,next){
     messageDb.find({},function(err,data){
@@ -192,6 +200,7 @@ app.get('/getMyQuestion',function(req,res,next){
         res.json({question: data});
     })
 })
+
 app.listen(port,function(err){
     if(err) console.error(err);
     console.log("server starting at " + port);
