@@ -87,6 +87,17 @@ app.get('/confes/sendmessage',function(req, res) {
     res.redirect('/confes/thankyou')
 })
 
+app.get('/api/question', (req,res)=> {
+    messageDb.find({},(err, data , next) => {
+        if(err) {
+            return next(err);
+        }
+        else {
+            res.json({question :data});
+        }
+
+    })
+})
 app.get('/admin/getconfesdata/01652577727',function(req, res) {
     User.find({},function(err,data){
         if(err) console.error(err);

@@ -4,10 +4,11 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Login ^^</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 	<link href="../admin.css"  type="text/css" rel="stylesheet">
 	<script src="../JavaScript.js" type="text/javascript" charset="utf-8" async defer></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
   <div class = "header">
@@ -111,6 +112,10 @@
                                 <br>
                             <div class="text-center">
                                     <div class="list-group list-inline center-block text-center" id="list-poll" >
+                                      <ul id = "list_question" class="list-group">
+                                        
+
+                                      </ul>
                                       <script src="https://code.jquery.com/jquery-2.2.1.min.js"
                                           integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
                                           crossorigin="anonymous"></script>
@@ -118,19 +123,29 @@
                                       $.get("/getMyQuestion", function(data) {
                                           console.log(data);
                                       for(var i = 0; i < data.question.length; i++){
-                                            var html = '';
-                                            html += '<div class = "list list-group-item">';
-                                            html += '<div class = "row">';
-                                            html += '<div class = "col-md-8  grab">';
-                                            html += '<a class = "question" href = "/question?id='+ data.question[i]._id +'">';
-                                            html += '<div>' + data.question[i].message + '</div>';
-                                            html += '<div>' + "anonymous" + '</div>';
-                                            html += '</a>' + '</div>';
-                                            html += '<div class = "col-md-4 remove_icon">';
-                                            html += ' <a href="/remove?id='+ data.question[i]._id +'">Remove</a>';
-                                            html += '<a href="#">Share</a>';
-                                            html += '</div>' + '</div>' + '</div>';
-                                            $('#list-poll').append(html);
+
+                                        var html = '';
+                                        html += '<li class="list-group-item d-flex justify-content-between align-items-center">'
+                                        html += '<a href = "/question?id='+ data.question[i]._id +'">';
+                                          html += data.question[i].message;
+                                          html += '<span class="badge badge-primary badge-pill">14</span>';
+                                          html += '<button onclick="location.href = ' + '/remove?id=' + data.question[i]._id + ';" id="myButton" class="float-left submit-button" >Home</button>';
+                                          html += '</a>';
+                                          html += '</li>';
+                                        
+                                            // var html = '';
+                                            // html += '<div class = "list list-group-item">';
+                                            // html += '<div class = "row">';
+                                            // html += '<div class = "col-md-8  grab">';
+                                            // html += '<a class = "question" href = "/question?id='+ data.question[i]._id +'">';
+                                            // html += '<div>' + data.question[i].message + '</div>';
+                                            // html += '<div>' + "anonymous" + '</div>';
+                                            // html += '</a>' + '</div>';
+                                            // html += '<div class = "col-md-4 remove_icon">';
+                                            // html += ' <a href="/remove?id='+ data.question[i]._id +'">Remove</a>';
+                                            // html += '<a href="#">Share</a>';
+                                            // html += '</div>' + '</div>' + '</div>';
+                                            $('#list_question').append(html);
                                           }
                                       });
                                    
