@@ -93,7 +93,8 @@ app.get('/api/question', (req,res)=> {
             return next(err);
         }
         else {
-            res.json({question :data});
+            let dataresponse = data[0];
+            res.json(dataresponse);
         }
 
     })
